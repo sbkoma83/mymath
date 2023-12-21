@@ -65,3 +65,24 @@ func Cosine(x float64) float64 {
 func Tangent(x float64) float64 {
 	return math.Tan(x)
 }
+func Abs(x float64) float64 {
+    if x < 0 {
+        return -x
+    }
+    return x
+}
+func Max(x, y float64) float64 {
+    if x > y {
+        return x
+    }
+    return y
+}
+func Yn(n int, x float64) float64 {
+    if n == 0 {
+        return (math.Sin(x) / x)
+    } else if n == 1 {
+        return ((math.Sin(x) / x) - (math.Cos(x) / x))
+    } else {
+        return (((2 * float64(n) - 1) / x) * Yn(n-1, x) - Yn(n-2, x))
+    }
+}
