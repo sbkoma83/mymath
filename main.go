@@ -77,6 +77,12 @@ func Max(x, y float64) float64 {
     }
     return y
 }
+func Sin(x float64) float64 {
+    return math.Sin(x)
+}
+func Cos(x float64) float64 {
+    return math.Cos(x)
+}
 func Yn(n int, x float64) float64 {
     if n == 0 {
         return (math.Sin(x) / x)
