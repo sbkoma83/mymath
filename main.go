@@ -84,11 +84,4 @@ func Cos(x float64) float64 {
     return math.Cos(x)
 }
 func Yn(n int, x float64) float64 {
-    if n == 0 {
-        return (math.Sin(x) / x)
-    } else if n == 1 {
-        return ((math.Sin(x) / x) - (math.Cos(x) / x))
-    } else {
-        return (((2 * float64(n) - 1) / x) * Yn(n-1, x) - Yn(n-2, x))
-    }
-}
+   return math.Yn(n, x)
