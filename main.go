@@ -42,7 +42,7 @@ func Min(x, y float64) float64 {
 	return math.Min(x, y)
 }
 
-func Pow(x, y float64) float64 {
+func Power(x, y float64) float64 {
 	return math.Pow(x, y)
 }
 
