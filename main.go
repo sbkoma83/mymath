@@ -54,27 +54,27 @@ func Tan(x float64) float64 {
 	return math.Tan(x)
 }
 func Abs(x float64) float64 {
-    if x < 0 {
-        return -x
-    }
-    return x
+	if x < 0 {
+		return -x
+	}
+	return x
 }
 func Max(x, y float64) float64 {
-    if x > y {
-        return x
-    }
-    return y
+	if x > y {
+		return x
+	}
+	return y
 }
 func Sin(x float64) float64 {
-    return math.Sin(x)
+	return math.Sin(x)
 }
 func Cos(x float64) float64 {
-    return math.Cos(x)
+	return math.Cos(x)
 }
 func Acos(x float64) float64 {
 	return math.Acos(x)
 }
 
 func Yn(n int, x float64) float64 {
-   return math.Yn(n, x)
+	return math.Yn(n, x)
 }
