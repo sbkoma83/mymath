@@ -38,15 +38,11 @@ func Trunc(x float64) float64 {
 	return math.Trunc(x)
 }
 
-func Maximum(x, y float64) float64 {
-	return math.Max(x, y)
-}
-
-func Minimum(x, y float64) float64 {
+func Min(x, y float64) float64 {
 	return math.Min(x, y)
 }
 
-func Power(x, y float64) float64 {
+func Pow(x, y float64) float64 {
 	return math.Pow(x, y)
 }
 
@@ -54,15 +50,7 @@ func SquareRoot(x float64) float64 {
 	return math.Sqrt(x)
 }
 
-func Sine(x float64) float64 {
-	return math.Sin(x)
-}
-
-func Cosine(x float64) float64 {
-	return math.Cos(x)
-}
-
-func Tangent(x float64) float64 {
+func Tan(x float64) float64 {
 	return math.Tan(x)
 }
 func Abs(x float64) float64 {
